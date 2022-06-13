@@ -1,0 +1,291 @@
+
+@font-face{
+	
+	font-family:title;
+	src:url(fuentes/title.otf);
+	
+}
+@font-face{
+	
+	font-family:zeuty;
+	src:url(fuentes/zeuty.ttf);
+	font-weight:normal;
+	
+}
+
+body{
+	
+	font-family:  sans-serif,verdana;
+	padding:0;
+	margin:0;
+	background-color:#f4f4f4;
+	max-width:100%;
+	max-height:100%;
+	
+}
+
+ 
+.baul{ 
+
+	width:100%;
+	margin:0;
+	overflow:hidden;
+	 
+}
+
+ 
+header{
+	
+	 background-color:#1C1D20;
+	 color:#fff;
+	 padding:2%;
+	 min-height:50%;
+	 border-bottom: 15px solid #F1CA06;
+	 width:100%;
+	 max-width:100%;
+	 max-height:100%;
+	 height:40%;
+	 padding-bottom:0;
+}
+
+header a{
+	
+	color: #fff;
+	text-decoration: none;
+    text-transform: uppercase;
+	font-size: 100%;
+	padding: 0 0.3% 0 0.3%;
+	
+}
+header a:hover{
+	
+	color:#F1CA06;
+
+	
+}
+
+header li{
+	
+	display:inline;
+	padding: 0 0.3% 0 0%;
+	margin-right: 4px;
+	font-family:zeuty;
+	
+
+	
+}
+
+header #mark h1{
+	
+	margin:0;
+	color:#ffff;
+	padding:1%;
+	padding-bottom:0;
+	font-family:title;
+	font-size: 30px;
+   
+
+}
+
+header nav{
+	
+	float:left;
+	margin-top:2%;
+	
+	width: 100%;
+}
+
+
+
+ul .idiomas{
+	
+	float: right;
+	margin-right: 3%;
+}
+
+/* estilos btns*/
+
+ul .translate{
+
+	background-color: black;/* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    
+	border-radius: 10%;
+	position: relative;
+	font-family:title;
+
+}
+ul .translate:hover{
+
+	position: relative;
+	color:#F1CA06;
+	
+}
+
+
+/* 
+Proyecto elementos */
+
+.contenedor{
+
+	padding: 0 10% 2% 10%;
+	text-align: center;
+	align-content: center;
+
+}
+.contenedor h3{
+	
+   
+	margin-left: 0;
+	color:black;
+	text-decoration: none;
+    text-transform: uppercase;
+	font-size: 30px;
+	font-family:zeuty;
+	filter: drop-shadow(4px 4px 10px white);
+	
+}
+
+.vid{
+
+	margin-top:3%;
+	margin-bottom: 2%;
+   
+    filter: drop-shadow(4px 4px 10px black);
+
+}
+
+.des{
+
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
+
+}
+
+.des p{
+	
+    color:black;
+	margin-left: 10%;
+	margin-right: 10%;
+		
+}
+
+.des a{
+
+	color:black;
+}
+.des a:hover{
+
+	
+	text-decoration: none;
+	color:#F1CA06;
+	font-weight:bold;
+	
+}
+
+
+.item{
+
+	padding: 0 10% 2% 10%;
+	text-align: center;
+	align-content: center;
+
+	
+	
+}
+.item img{
+	
+	width:32%;
+	height:23%;
+	
+	filter: drop-shadow(4px 4px 10px black);
+ 
+}
+
+.item p{
+
+	
+	margin-left: 0;
+	margin-right: 0;
+	color:black;
+	text-decoration: none;
+    text-transform: uppercase;
+	font-size: 30px;
+	font-family:zeuty;
+	filter: drop-shadow(4px 4px 10px white);
+}
+
+.item .repo{
+
+	margin-top: 3%;
+	margin-right: 3%;
+}
+
+
+.repo a{
+
+	
+	padding: 0 0 0 0;
+	color:black;
+	text-decoration: none;
+    text-transform:uppercase;
+	font-size: 25px;
+	font-family:zeuty;
+	filter: drop-shadow(4px 4px 10px yellow);
+	
+
+}
+.repo a:hover{
+
+	
+	text-decoration: none;
+	color:#F1CA06;
+	font-weight:bold;
+	
+}
+
+
+/* Otros ajustes */
+.responsive{
+	
+	width:100%;
+	
+}
+
+.container-fluid .img{
+	
+	width:100%;
+}
+
+/* Para los botones de traduccion*/
+/* Con estas sentencias,cambiamos el tipo de cursos al pasar por el texto de los id es y en*/
+#es{cursor:pointer;}
+#en{cursor:pointer;}
+
+
+/* pie de pagina */
+
+
+footer{
+	 
+	padding:15px;
+
+	margin-bottom:0;
+	background-color:#F1CA06;
+	font-size:90%;
+	width:100%;
+
+	bottom: 0%;
+
+	
+}
+
+

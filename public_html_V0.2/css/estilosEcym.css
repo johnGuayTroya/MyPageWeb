@@ -1,0 +1,439 @@
+/* FONTS */
+@font-face{
+
+	font-family:bauhaus;
+	src:url(fuentes/Bauhaus\ 93.ttf);
+
+}
+
+
+/* ANIMATIONS */
+
+@keyframes  spanAnimUp
+{
+    0%
+    {
+        
+        transform: translateY(0px);
+
+    }
+    100%
+    {
+        transform: translateY(-10px);
+    }
+}
+@keyframes  spanAnimD
+{
+    0%
+    {
+
+        transform: translateY(-10px);
+
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+
+
+/* BODY */
+#body
+{
+    background-color: #e1e3e6;
+}
+.titleContainer h1
+{
+
+    font-family: bauhaus;
+    font-size: 65pt;
+    letter-spacing: 0.1pt;
+
+
+}
+#h1_01,#h1_02,#h1_03
+{
+    transform: rotate(-3deg); 
+    color: #F5B63E;
+
+    text-shadow: 5px -3px 2px rgba(8, 8, 8, 0.89);
+}
+.titleContainer span
+{
+    /* We must put inline-block because we are working with span tag */
+    display: inline-block;
+
+    animation-direction:normal;
+    animation-iteration-count:1;
+    /* The element will retain the style values that is set by the last keyframe 
+    (depends on animation-direction and animation-iteration-count) */
+    animation-fill-mode:forwards;
+     
+
+    cursor: pointer;
+    
+}
+#red
+{
+    color: #BB0B24;
+}
+#h1_02
+{
+    margin-left: 21%;
+    color: #43AB6C;
+}
+#h1_03
+{
+
+    margin-left: 72%;
+    margin-top: -5%;
+    color: #2D73B4;
+    
+}
+#brain
+{
+    cursor: pointer;
+    margin-right: 18%;
+    margin-top: 25%;
+    
+    height: 325px;
+
+}
+#pegi
+{
+    height: 100px;
+
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.883);
+}
+a #pegi:hover
+{
+    transform: scale(0.9);
+    border: none;
+    border-radius: 0pt;
+}
+
+
+/* CARROUSEL */
+#myCarousel
+{
+    background-color:#1c1d20c0;
+    /* filter:opacity(0.9); */
+ 
+}
+
+.carousel-item img
+{
+    border-radius: 10%;
+
+    cursor: pointer;
+}
+.carousel-item img:hover
+{
+   transform: scale(1.03);
+}
+
+/* CorouselControls */
+#carousel-example a
+{
+    width: 100px;
+    height: 100px;
+
+    margin-top: 5%;
+
+
+    z-index: 2;
+}
+
+a.carousel-control-prev
+{
+    margin-left: 1%;
+}
+a.carousel-control-next
+{
+    margin-right: 1%;
+}
+#carousel-example .carousel-control-prev-icon
+{
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../Img/ecym/arrow-left.svg");
+}
+#carousel-example .carousel-control-next-icon
+{
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../Img/ecym/arrow-right.svg");
+
+}
+
+/*
+    code by Iatek LLC 2018 - CC 2.0 License - Attribution required
+    code customized by Azmind.com
+*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Show 4th slide on md if col-md-4*/
+    .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Show 3rd slide on sm if col-sm-6*/
+    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -50%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) {
+    .carousel-item {
+        margin-right: 0;
+    }
+    /* show 2 items */
+    .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be also positioned for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* MD */
+@media (min-width: 768px) {
+    /* show 3rd of 3 item slide */
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* LG */
+@media (min-width: 991px) {
+    /* show 4th item */
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    /* Show 5th slide on lg if col-lg-3 */
+    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+    
+}
+
+/* VIDEO CONTENT */
+/* .vid iframe
+{
+    
+} */
+.intro
+{
+    font-weight: bold;
+  
+}
+
+/* elmotivodelProyecto */
+.emdp,.ddp,.huep,.ldi
+{
+    font-family: bauhaus;
+    font-size: 30pt;
+
+    color: #2D73B4;
+    text-shadow: 2px 2px 2px #010911;
+
+    text-transform: uppercase;
+}
+.ddp
+{
+    color:#F5B63E;
+}
+.huep
+{
+    color:#43AB6C;
+    font-size: 25pt;
+}
+.ldi
+{
+    font-size: 25pt;
+   color: #BB0B24;
+}
+h3.emdp:hover
+{
+    color:#F5B63E;
+    transform: scale(1.01);
+
+    
+}
+h3.ddp:hover
+{
+    color:#2D73B4;
+    transform: scale(1.01);
+
+    
+}
+h3.huep:hover
+{
+    color:#2D73B4;
+    transform: scale(1.01);
+
+    
+}
+h3.ldi:hover
+{
+    color:#F5B63E;
+    transform: scale(1.01);
+
+    
+}
+
+.links
+{
+    font-family: bauhaus;
+}
+
+.links li
+{
+    margin-bottom: 3%;
+
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+/* mobile TEXT SIZE */
+@media (max-width: 1200px)
+{
+    .titleContainer h1
+    {
+    font-size: calc(3.0rem + 1vw);
+    }
+
+    .emdp,.ddp
+    {
+     font-size: calc(3.0rem + 1vw);
+    }
+}
+
+/* when the browser window is 1100px wide or less: */
+@media only screen and (max-width: 1100px)
+{
+     .titleContainer h1
+    {
+     font-size: calc(2.3rem + 1vw);
+    }
+
+    #h1_03{ margin-left: 68%;}
+   
+    #brain
+    {
+        height: calc(10rem + 1vw);
+    }
+  
+}
+
+@media only screen and (max-width: 800px)
+{
+     .titleContainer h1
+    {
+     font-size: calc(1.03rem + 1vw);
+    }
+
+    #h1_03{ margin-left: 56%;}
+   
+    #brain
+    {
+        height: calc(10rem + 1vw);
+    }
+  
+}
+
+@media only screen and (max-width: 521px)
+{
+    
+
+    #h1_03{ margin-left: 66%;}
+   
+}
+
