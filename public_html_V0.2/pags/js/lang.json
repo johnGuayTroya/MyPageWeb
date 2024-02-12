@@ -15,9 +15,11 @@
 		"ECYMd1": "ECYM es un pequeño entrenador de mecanografía, atención y memoria en el que puedes practicar o poner a prueba tus habilidades cognitivas.",
 		"ECYMd2": "Incluye un sistema de inicio de sesión y un sistema de tabla de puntuaciones.",
 		"AM1": "Mi nombre es Johnny.",
-		"AM2": "He estudiado en ESNE, Escuela Universitaria de Diseño, Innovación y Tecnología.",
+		"AM2": "He estudiado en ESNE, ahora se llama UDIT.",
 		"AM3": "Durante mis años de grado me centré en la parte de programación,porque creo que es una pieza clave cuando se trata de cualquier desarrollo de software,por pequeño que sea.",
 		"Sk1": "Conozco los patrones de diseño (singleton,MVC,factory,observer...),estructuras de datos,algoritmos genéticos,POO,además tengo conocimiento sólido tanto de programación como manejo del motor Unity3D(profiler,flujo de trabajo,scripting)",
+		"AM4": "A principios del 2022 Empecé como desarrollador Salesforce en Omega CRM a Merkle company y he ido adquiriendo conocimiento sobre este CRM.",
+		"Sk2": "Domino la parte front (LWC,javascript,HTML) como back (Apex,SOQL),conozco su herramienta declarativa FLOW,se manejar comunidades,crear el modelo de datos,crear reglas de validación,crear procesos de aprobación,batches...",
 		"ECYMp1": "Práctica final para la asignatura POO II curso 2018-2019(2do año)",
 		"ECYMp2": "Este poyecto surgió de la percepción que tengo acerca del aprendizaje.Pienso que los humanos aprendemos mejor cuando interactuamos con una situación ,con un problema y mediante la experimentación,analisis e imaginación llegamos a un resultado,que puede ser o no el correcto.",
 		"ECYMp3": "Inspirado por la saga de videojuegos Brain Training, decidí realizar este pequeño entrenador de mecanografía,atención y memoria ",
@@ -44,10 +46,6 @@
 	    "MTp1": "Music Translator es una herramienta de traducción de canciones en la cual podemos seleccionar nuesta canción favorita,escibir la traducción en el lenguaje que queramos,podremos guardar el progreso en un formato similar al RST,también incluye la funcionalidad de serialización.",
 	    "MTp2": "Para este proyecto nos decantamos por el sistema modelo controlador y vista,Hemos utilizado el lenguaje c++ para construir el BackEnd y Unity como FrontEnd.Gracias a la creación de la Dll comunicamos las clases y métodos que usamos dentro de la herramienta.",
 	    "MTp3": "En el enlace de abajo encontrarás el manual de uso de este proyecto."
-		
-
-
-
 	},
 	"en": {
 
@@ -64,9 +62,11 @@
 		"ST": "Special Thanks",
 		"DAPK":"Dowload APK",
 		"AM1": "My name is Johnny.",
-		"AM2": "I studied in ESNE, the University School of Design, Innovation and Technology.",
+		"AM2": "I studied in ESNE,now it called UDIT",
 		"AM3": "During my undergraduate years I focused on the programming part, because I believe that it is a key piece when it comes to any software development, no matter how small.",
 		"Sk1": "I have knowledge about design patterns (singleton, MVC, factory, observer...),data structures, genetic algorithms, OOP,web design and I know both programming and working in the Unity3D program (workflow, profiler, scripting...).",
+		"AM4": "In 2022 earlies I started as Salesforce developer in Omega CRM a Merkle company and I have adquired experience about this CRM.",
+		"Sk2": "I have strong knowledge about front-end (LWC,javascript,HTML) as back-end (Apex, SOQL), I know your declarative tool FLOW, I know how to manage communities, create the data model, create validation rules, create approval processes, batches...",
 		"ECYMp1": "Final work for the subject OOP II Academy year 2018-2019 (2nd year)",
 		"ECYMp2": "This project arose from the perception that I have about learning.I thin that humans learn best when we interact with a situation with a problem and through experimentation,analysis and imagination we arrive at a result, which may or may not be the correct one.",
 		"ECYMp3": "Also inspired by the Brain Training videogame saga,I decided to do this littel typing,attention and memory trainer",
@@ -93,8 +93,6 @@
 		"MTp1": "Music Translator is a song translation tool in which we can select our favorite song, write the translation in the language we want, we can save the progress in a format similar to RST, it also includes serialization functionality.",
 	    "MTp2": "For this project we opted for the controller and view model system, We have used the c ++ language to build the BackEnd and Unity as FrontEnd.Thanks to the creation of the Dll we communicate the classes and methods that we use within the tool.",
 	    "MTp3": "In the link below you will find the manual for using this project."
-		
-
 	}
 
 }
