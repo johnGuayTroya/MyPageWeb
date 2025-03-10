@@ -119,7 +119,9 @@ function languageSwapController() {
         localStorage.setItem("lang", lang);
         translate();
     });
+}
 
+function btnLanguageHandler(){
     // Cambia el color de los botones al hacer clic
     $("#es").click(function () {
         $(this).css("color", "#F1CA06");
@@ -131,7 +133,8 @@ function languageSwapController() {
     });
 }
 
-
 $(document).ready(function(){
-	languageSwapController();;
+	languageSwapController();
+    btnLanguageHandler();
+    
 });
