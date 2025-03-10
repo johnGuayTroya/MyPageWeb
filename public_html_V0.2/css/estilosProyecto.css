@@ -105,6 +105,10 @@ ul .translate:hover{
 	color:#F1CA06;
 }
 
+ul .translate:focus{
+	outline: none;
+}
+
 
 /* 
 Proyecto elementos */

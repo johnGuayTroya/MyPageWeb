@@ -76,8 +76,12 @@ p,a{ font-size: 17pt; }
     margin-right: 10px;
 
     z-index: -1;
+    
 }
 .translate:hover{ color: #F1CA06; }
+.translate:focus{
+	outline: none;
+}
 /* CARDS */
 .titleProject{ font-family:title; color: whitesmoke;}
 p{ color: whitesmoke; }
