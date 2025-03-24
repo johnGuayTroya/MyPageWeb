@@ -103,11 +103,11 @@ $(document).ready(function(){
 	// const spansE= $("#entrenamiento span");
     // alert(spansE.length);
 
-    let pageLoad = false;
-    if(pageLoad !== true){
+    let pageLoaded = false;
+    if(pageLoaded  !== true){
         $(".vid").slideToggle();
         $(".carPic").slideToggle();
-        pageLoad = true;
+        pageLoaded = true;
     }
     
     videoHandler();
