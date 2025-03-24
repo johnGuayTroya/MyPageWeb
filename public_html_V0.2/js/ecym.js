@@ -1,11 +1,49 @@
-$(document).ready(function()
-{
-    //con esta asignacion consigo todos los elementos span dentro del id entrenamiento
-	// const spansE= $("#entrenamiento span");
-    // alert(spansE.length);
 
-    $(".vid").slideToggle();
+function videoHandler(){
+    $("#playVideo").on({ 
+        click:function(){ 
+            const imgSrcCarPic  = $(".carPic img").attr("src");
+            if(imgSrcCarPic !== ''){ //si la imagen se está mostrando la ocultamos
+                $(".vid").slideToggle(100);
+                $(".carPic").slideToggle(100);
+                $(".carPic img").attr("src", '');
+            }else if(imgSrcCarPic === ''){
+                $(".vid").slideToggle(100); 
+            }
+        },
+    });
+}
 
+function imageCarouselHandler(){
+    const corouselItems = $(".carousel-item").length;
+    //console.log("Num de etiquetas con clase 'carousel-item':", count);
+    for(let i = 1 ; i < corouselItems ; ++i){
+        $("#carousel_img"+i).on({
+            click: function() {
+                // obtenemos el valor del atributo src de la imagen original
+                const imgSrc        = $("#carousel_img"+i+ " img").attr("src");
+                const imgSrcCarPic  = $(".carPic img").attr("src");
+
+                if ($(".vid").is(":visible")) { //ocultamos el div del video si esta visible
+                    $(".vid").slideToggle(100);
+                }
+
+                if(imgSrcCarPic === ''){
+                    // Asignamos el valor obtenido al atributo src de la imagen en .carPic
+                    $(".carPic img").attr("src", imgSrc);
+                    $(".carPic").slideToggle(100);
+                }else if (imgSrcCarPic !== '' && imgSrc !== imgSrcCarPic){ 
+                    $(".carPic img").attr("src", imgSrc); // caso en el que cambiamos de imagen por otra del carousel
+                }else if (imgSrc === imgSrcCarPic){ //cerramos toggle
+                    $(".carPic").slideToggle(100);
+                    $(".carPic img").attr("src", '');
+                }
+            },
+        });
+    }
+}
+
+function animationHandler(){
     $(".titleContainer span").on({
         mouseenter:function(){
          $(this).css("animation-duration","1s");
@@ -29,8 +67,10 @@ $(document).ready(function()
             clickBrain++;
         },
         mouseleave:function(){ $(this).css("transform","scale(1)"); clickBrain=0; },
-    });
-   
+    });    
+}
+
+function carouselHandler(){
     /*
     Carousel
     */
@@ -56,9 +96,22 @@ $(document).ready(function()
             }
         }
     });
+}
 
-$("#playVideo").on({ 
-    click:function(){ $(".vid").slideToggle(100); },
-});
- 
+$(document).ready(function(){
+    //con esta asignacion consigo todos los elementos span dentro del id entrenamiento
+	// const spansE= $("#entrenamiento span");
+    // alert(spansE.length);
+
+    let pageLoad = false;
+    if(pageLoad !== true){
+        $(".vid").slideToggle();
+        $(".carPic").slideToggle();
+        pageLoad = true;
+    }
+    
+    videoHandler();
+    animationHandler();    
+    carouselHandler();
+    imageCarouselHandler();
 });
